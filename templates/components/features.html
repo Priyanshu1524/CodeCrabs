@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyFast Features Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .features {
+            padding: 8px 0 2px 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .features-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .features-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 60px;
+            line-height: 1.7;
+        }
+
+        .feature-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: #e0e0e0;
+        }
+
+        .feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature:hover::before {
+            opacity: 1;
+        }
+
+        .feature-image-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover .feature-image-container {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #e8f0ff, #d0e2ff);
+        }
+
+        .feature-image {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                padding: 60px 0;
+            }
+
+            .features-title {
+                font-size: 2rem;
+            }
+
+            .features-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+            }
+
+            .feature-boxes {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 40px;
+            }
+
+            .feature {
+                padding: 30px 20px;
+            }
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="features text-center">
+        <div class="container">
+            <h2 class="features-title">AnyFast Online Video Downloader</h2>
+            <div class="features-subtitle">
+                Download all videos from the internet online with high-quality MP4/MP3 
+                in the GiveFastLink video downloader for 100% free, easy-to-use, and unlimited.
+            </div>
+
+            <div class="feature-boxes">
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#4285f4" stroke-width="2"/>
+                            <path d="M10 8L16 12L10 16V8Z" fill="#4285f4"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">High Quality Downloads</div>
+                    <div class="feature-description">Download videos in the highest available quality, supporting up to 4K resolution for the best viewing experience.</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#34a853" stroke-width="2" fill="#34a853"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">Lightning Fast</div>
+                    <div class="feature-description">Experience blazing-fast download speeds with our optimized servers and advanced download technology.</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#fbbc05" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="#fbbc05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">100% Free</div>
+                    <div class="feature-description">Completely free to use with no hidden charges, registration requirements, or download limits.</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="12" rx="2" stroke="#ea4335" stroke-width="2"/>
+                            <path d="M7 20H17" stroke="#ea4335" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9 16V20" stroke="#ea4335" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M15 16V20" stroke="#ea4335" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">Multiple Platforms</div>
+                    <div class="feature-description">Support for all major video platforms including YouTube, Facebook, Instagram, TikTok, and many more.</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#4285f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">Safe & Secure</div>
+                    <div class="feature-description">Your privacy is protected with secure downloads and no data storage on our servers.</div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-image-container">
+                        <svg class="feature-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="#34a853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-title">Easy to Use</div>
+                    <div class="feature-description">Simple three-step process: paste URL, choose format, and download. No technical knowledge required.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
