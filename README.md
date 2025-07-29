@@ -49,18 +49,6 @@ python app.py
 
 The application will be available at: **http://127.0.0.1:5000**
 
-## 📁 Project Structure
-
-```
-codecrab/
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── templates/            
-│   └── index.html        # Frontend interface
-├── static/               # CSS, JS, and other assets
-└── README.md            # Project documentation
-```
-
 ## 🛠️ Technology Stack
 
 * **Backend**: Flask (Python)
